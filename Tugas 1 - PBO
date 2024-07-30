@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+    <head>
+        <title>Pemograman Berorientasi Objek</title>
+     <style>
+        html{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 15px;
+    color: black;
+
+    background-image: linear-gradient(white,rgb(218, 85, 85));
+}
+header{
+    font-size: 45px;
+    text-align: center;
+    
+}
+
+.awal{
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 25px;
+    font-weight: 500;
+    
+}
+
+table, th, td {
+    border:3px solid black;
+  }
+  .tabel{
+    padding-top: 15px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  button{
+    background: whitesmoke;
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  </style>
+    </head>
+    <header>
+        PEMOGRAMAN BERORIENTASI OBJEK
+    </header>
+   <body>
+    <div class="awal">
+        Pemrograman Berorientasi Objek (PBO) telah mengubah lanskap pengembangan perangkat lunak sejak konsepnya pertama kali muncul. Dengan fokus pada objek dan kelas sebagai unit utama dalam perangkat lunak, PBO tidak hanya menyediakan metode baru untuk merancang aplikasi, tetapi juga mempermudah pemeliharaan dan pengembangan sistem yang kompleks.
+    </div>
+   
+    
+    <table>
+        <tr>
+    <td><button type="button" onclick="document.getElementById('demo').style.display='block'">SEJARAH PERKEMBANGAN PBO</button></td>
+    <td><button type="button" onclick="document.getElementById('fe').style.display='block'">PEMROGRAMAN PERTAMA YANG MENDUKUNG PBO</button></td>
+
+    <td><button type="button" onclick="document.getElementById('de').style.display='block'">PERAN BAHASA PEMROGRAMAN SEPERTI SMALLTALK, C++, DAN JAVA</button></td>
+    <br>
+    <br>
+    <td><button type="button" onclick="document.getElementById('ce').style.display='block'">BAGAIMANA PBO MENGUBAH CARA PERANGKAT LUNAK DIKEMBANGKAN DAN DIPELIHARA</button></td>
+    
+    </tr>
+    </table>
+    <p id="demo" style="display:none;font-size: 20px;">SEJARAH PERKEMBANGAN PBO<br>Pada awalnya, konsep dasar PBO muncul pada tahun 1960-an dengan bahasa SIMULA, dikembangkan oleh Ole-Johan Dahl dan Kristen Nygaard di Norwegia. SIMULA adalah bahasa pemrograman pertama yang secara eksplisit mendukung pembuatan objek dan kelas. Ide dasar ini memungkinkan pengembang untuk memodelkan dunia nyata dalam bentuk objek yang berinteraksi satu sama lain melalui metode dan properti.</p>
+    <br>
+    <p id="fe" style="display:none;font-size: 20px;">PEMROGRAMAN PERTAMA YANG MENDUKUNG PBO<br>Bahasa Smalltalk, yang dikembangkan di Xerox PARC pada tahun 1970-an oleh Alan Kay, Dan Ingalls, dan Adele Goldberg, menjadi titik balik penting dalam sejarah PBO. Smalltalk adalah bahasa yang sepenuhnya berbasis objek, di mana setiap entitas dalam bahasa ini adalah objek yang mampu mengirim dan menerima pesan. Smalltalk memperkenalkan konsep penting seperti enkapsulasi, pewarisan, dan polimorfisme, yang merupakan fondasi dari PBO modern.</p>
+    <br>
+    <p id="de" style="display:none;font-size: 20px;">PERAN BAHASA PEMROGRAMAN SEPERTI SMALLTALK, C++, DAN JAVA<br>C++, yang dikembangkan oleh Bjarne Stroustrup pada tahun 1980-an, adalah bahasa yang menggabungkan konsep PBO dengan kekuatan dan fleksibilitas dari bahasa C. C++ memperkenalkan fitur-fitur seperti kelas, objek, dan pewarisan, yang menjadikannya populer dalam pengembangan sistem berkinerja tinggi dan aplikasi desktop.
+
+        Java, yang dirilis oleh Sun Microsystems pada tahun 1995, membawa PBO ke arus utama pengembangan perangkat lunak. Java tidak hanya mendukung fitur-fitur PBO seperti pewarisan, enkapsulasi, dan polimorfisme, tetapi juga menawarkan portabilitas tinggi melalui konsep "Write Once, Run Anywhere" (WORA). Java digunakan secara luas dalam pengembangan aplikasi web, mobile, dan enterprise.
+   </p>
+   <br>
+   <p id="ce" style="display:none;font-size: 20px;">BAGAIMANA PBO MENGUBAH CARA PERANGKAT LUNAK DIKEMBANGKAN DAN DIPELIHARA<br>Pengenalan PBO telah mengubah paradigma dalam pengembangan perangkat lunak dengan cara berikut: <br><br> - Modularitas: PBO memungkinkan pengembangan perangkat lunak dalam bentuk modul atau kelas yang dapat digunakan kembali, mempercepat proses pengembangan dan mengurangi redundansi kode. <br> - Keselamatan dan Keamanan: Enkapsulasi dalam PBO memungkinkan data untuk disembunyikan dan hanya diakses melalui antarmuka yang ditentukan, meningkatkan keamanan aplikasi. <br> - Skalabilitas: Pewarisan dan polimorfisme memungkinkan pengembang untuk memperluas dan memodifikasi fungsionalitas program dengan mudah tanpa mengubah struktur inti dari kode yang sudah ada. <br> - Pemeliharaan: Dengan struktur yang terorganisir baik dan hubungan yang jelas antara objek, pemeliharaan perangkat lunak menjadi lebih mudah karena perubahan yang diperlukan dapat dilakukan pada bagian-bagian yang terisolasi.
+   </p>
+
+    <h1 style="padding-left: 50px;">Perbedaan Pemrograman Prosedural dan PBO</h1>
+    <center>
+        <div class="tabel">
+        <table style="width:100%">
+            <tr style="background-color: purple;color: white;">
+              <th>Aspek</th>
+              <th>Pemrograman Prosedural</th>
+              <th>Pemrograman Berorientasi Objek (PBO)</th>
+            </tr>
+            <tr style="background-color: rgba(255, 255, 255, 0.507);">              <td>Struktur Program</td>
+              <td>Program terdiri dari fungsi-fungsi/prosedur-prosedur yang berdiri sendiri.</td>
+              <td>Program terdiri dari objek-objek yang berinteraksi satu sama lain. Setiap objek memiliki data dan metode (fungsi) yang terkait.</td>
+            </tr>
+            <tr style="background-color: rgba(255, 255, 255, 0.507);">              <td>Pendekatan</td>
+              <td>Berbasis pada urutan eksekusi instruksi secara linear.</td>
+              <td>Berbasis pada pemodelan objek yang merepresentasikan entitas dalam dunia nyata.</td>
+            </tr>
+            <tr style="background-color: rgba(255, 255, 255, 0.507);">              <td>Kelebihan</td>
+              <td>- Mudah dipahami dan dipelajari. <br>- Cocok untuk aplikasi sederhana dan kecil. <br>- Lebih mudah dalam hal efisiensi dalam penggunaan memori.</td>
+              <td>- Memudahkan pengembangan dan pemeliharaan aplikasi yang kompleks. <br>- Memfasilitasi penggunaan kembali kode (reusability). <br>- Mendorong pemrogram untuk berpikir secara abstrak dan modular.</td>
+            </tr>
+            <tr style="background-color: rgba(255, 255, 255, 0.507);">
+              <td>Contoh Bahasa</td>
+              <td>C, Pascal, BASIC</td>
+              <td>Java, C++, Python, Ruby</td>
+            </tr>
+          </table>
+          </div>
+    </center>
+</body>
+</html>
