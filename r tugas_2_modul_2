@@ -1,0 +1,56 @@
+#----------------------------------------------------------------------------------------------------------------------#
+#class untuk menyimpan kumpulan kode dam mempermudah programmer untuk memanggilnya.
+class Kalkulator:
+    #init atau initiialize adalah instance untuk objek baru dan self adalah argumen tambahan apa pun yang perlu dijalankan oleh objek.
+    def __init__(self, angka1, angka2):
+        self.angka1 = angka1
+        self.angka2 = angka2
+
+    #self itu kata baku yang tidak bisa diubah.
+
+    def tambah(self):
+        #return untuk mengembalikan hasil variabel tersebut.
+        # tanda + untuk pertambahan.
+        return self.angka1 + self.angka2
+
+    def kurang(self):
+        # return untuk mengembalikan hasil variabel tersebut.
+        # tanda - untuk pengurangan.
+        return self.angka1 - self.angka2
+    
+    def kali(self):
+        # return untuk mengembalikan hasil variabel tersebut.
+        # tanda * untuk perkalian.
+        return self.angka1 * self.angka2
+
+    def bagi(self):
+        # return untuk mengembalikan hasil variabel tersebut.
+
+        # tanda / untuk pembagian.
+
+        # If sebagai perintah untuk memberikan komentar lain dari isi tersebut.
+
+        if self.angka2 == 0:
+            return "Tidak dapat membagi dengan nol"
+        # else sebagai perintah paling terakhir jika tidak ada perintah lagi dari if atau elif.
+        else:
+            return self.angka1 / self.angka2
+#----------------------------------------------------------------------------------------------------------------------#
+
+#input() untuk memberi jawaban dari user dan int(input()) untuk memberikan jawaban berupa angka.
+print("Kalkulator")
+
+kalkulator1 = Kalkulator (int(input("Masukkan angka pertama = ")), int(input("Masukkan angka kedua = ")))
+
+#Variabel2 = variabel1 dengan def yang ada di atas untuk melakukan eksekusi yang sesuai dengan perintah.
+hasiltambah = kalkulator1.tambah()
+hasilkurang = kalkulator1.kurang()
+hasilkali = kalkulator1.kali()
+hasilbagi = kalkulator1.bagi()
+
+
+#variabel dengan hasil dapat ditampilkan di layar tanpa menggunakan "".
+print("Hasil penjumlahan:", hasiltambah)
+print("Hasil pengurangan:", hasilkurang)
+print("Hasil perkalian:", hasilkali)
+print("Hasil pembagian:", hasilbagi)
